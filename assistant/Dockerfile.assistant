@@ -1,0 +1,19 @@
+# Use official Python image
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy requirements and install dependencies
+COPY ./assistant ./
+RUN pip install -r requirements.txt
+
+# Install crewai
+RUN pip install crewai
+RUN crewai install
+
+
+
+# Expose port and start the app
+EXPOSE 8000
+CMD ["uvicorn", "assistant.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload", "--app-dir", "src"]

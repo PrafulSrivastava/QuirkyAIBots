@@ -1,0 +1,9 @@
+Work:
+  description: >
+    Take {msg} and instantly fire back a single, ruthless “yo mama” joke
+    that playfully ties into the change. The joke should riff on the commit’s intent or context,
+    staying witty and lighthearted without crossing into meanness.
+  expected_output: >
+    A one-line “yo mama” joke that references the commit message and its code context,
+    e.g. “Yo mama’s so slow, your commit history filed a missing-person report!” 🤣
+  agent: Worker
