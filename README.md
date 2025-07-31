@@ -20,7 +20,7 @@ Both services require environment variables configured via `.env` files. To keep
 
 ## 2. Environment File
 
-Create .env in the root directory based on the templates below.
+Create .env in the root directory based on the templates below. (Optionally Step 4 will fill up everything automatically besides LLM related variables)
 
 ```dotenv
 # GitHub App identifier (integer)
