@@ -3,7 +3,7 @@
 This repository runs two services via Docker Compose:
 
 1. **MonitoringBot** – a GitHub ProBot–based bot (directory: `monitoring_bot`).
-2. **Assistant** – a CRU-AI framework–based LLM model (directory: `assistant`).
+2. **Assistant** – a CREW-AI framework–based LLM model (directory: `assistant`).
 
 Both services require environment variables configured via `.env` files. To keep secrets out of the repository, `.env` files have been removed. Follow the instructions below to set them up.
 
