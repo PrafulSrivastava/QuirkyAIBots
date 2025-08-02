@@ -5,11 +5,12 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy requirements and install dependencies
-COPY ./assistant ./
-RUN pip install -r requirements.txt
+COPY ./assistant/requirements.txt .
 
-# Install crewai
-RUN pip install crewai
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY ./assistant ./
+
 RUN crewai install
 
 

@@ -1,14 +1,12 @@
 #!/usr/bin/env python
 import sys
 import warnings
-
 from datetime import datetime
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from assistant.crew import Assistant
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
-
 
 app = FastAPI()
 
@@ -35,7 +33,9 @@ def run():
     """
 
 def generate(message):
-    inputs = {'msg': message}
+    inputs = {
+        'msg': message
+    }
     try:
         result = Assistant().crew().kickoff(inputs=inputs)
         if not hasattr(result, 'raw') or not isinstance(result.raw, str):

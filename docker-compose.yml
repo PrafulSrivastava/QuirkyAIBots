@@ -2,30 +2,26 @@ services:
   assistant:
     build:
       context: .
-      dockerfile: /assistant/Dockerfile.assistant
+      dockerfile: ./assistant/Dockerfile.assistant
+    volumes:
+      - ./assistant/.env:/app/.env
     ports:
       - "8000:8000"
-    # volumes:
-    #   - ./assistant:/app/
     env_file:
-      - .env
+      - ./assistant/.env
     networks:
       - botnet
 
   monitoring-bot:
     build:
       context: .
-      dockerfile: /monitor_bot/Dockerfile.bot
+      dockerfile: ./monitor_bot/Dockerfile.bot
     ports:
       - "3000:3000"
-    # volumes:
-      # - ./monitor_bot:/app
-      # - ./monitor_bot/node_modules:/app/node_modules
-    environment:
-      # add any env vars here
-      - NODE_ENV=production
+    volumes:
+      - ./monitor_bot/.env:/app/.env
     env_file:
-      - .env
+      - ./monitor_bot/.env
     networks:
       - botnet
     
