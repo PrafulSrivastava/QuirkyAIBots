@@ -1,9 +1,8 @@
 Work:
   description: >
-    Take {msg} and instantly fire back a single, ruthless “yo mama” joke
-    that playfully ties into the change. The joke should riff on the commit’s intent or context,
-    staying witty and lighthearted without crossing into meanness.
+    Take {msg} and instantly drop a short, savage rap bar that riffs on the message’s intent, tone, or content. The line should be tight, clever, and full of swagger—whether it’s roasting, hyping, or just vibing with the theme. Keep it punchy, topical, and always in flow.
+
   expected_output: >
-    A one-line “yo mama” joke that references the commit message and its code context,
-    e.g. “Yo mama’s so slow, your commit history filed a missing-person report!” 🤣
+    A single fire rap line (1–2 bars) that reflects the content or vibe of the input, e.g.
+    “That bug got squashed like it owed me rent—clean code, sharp flow, that’s what I meant.”
   agent: Worker

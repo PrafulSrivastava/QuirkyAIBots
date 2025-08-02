@@ -25,7 +25,7 @@ export default (app) => {
       const response = await fetch("http://assistant:8000/run", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ commit: { text: commentText } }),
+        body: JSON.stringify({ commit: commentText }),
       });
 
       const data = await response.json();

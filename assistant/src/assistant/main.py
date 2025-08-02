@@ -5,23 +5,23 @@ from datetime import datetime
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from assistant.crew import Assistant
+from pydantic import BaseModel
+
+class CommitPayload(BaseModel):
+    commit: str
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
 app = FastAPI()
 
-@app.get("/health")
-def health_check():
-    return {"status": "ok"}
-
 @app.post("/run")
-def run_api(payload: dict):
+def run_api(payload: CommitPayload):
     """
     Expose generate as an API endpoint.
-    Expects JSON: { "message": "your commit message" }
+    Expects JSON: { "commit": "your commit message" }
     """
     try:
-        message = payload.get("message", "")
+        message = payload.commit
         rap = generate(message)
         return JSONResponse(content={"status": "success", "response": rap})
     except Exception as e:
