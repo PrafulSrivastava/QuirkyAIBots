@@ -17,7 +17,7 @@ Before you begin, ensure you have:
 
 - [Docker](https://docs.docker.com/get-docker/) and Docker Compose installed.
 - A valid **Gemini API key** for the Assistant. [the API key is free for use]
-- Two empty .nv files, one in assistant and other in monitoring_bot directories.
+- Two empty .env files, one in assistant and other in monitoring_bot directories.
 
 ---
 
