@@ -1,4 +1,5 @@
 # 🤖 Monitoring Bot + LLM Assistant
+# Programming Sidekick: Provide on-demand, friendly feedback on issue/review comments as if you were sitting side-by-side—hints, reminders, and encouragement, always supportive.
 
 ## 🧩 Project Overview
 
