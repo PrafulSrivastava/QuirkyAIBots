@@ -1,4 +1,5 @@
 # 🤖 Monitoring Bot + LLM Assistant
+# Rapper Bot:  Turn issue/review comment into a slick, rhythm-packed rap. Whether it’s about code, coffee, climate change, or cats—drop bars on the fly, spitting rhymes that impress, entertain, and sometimes even enlighten.
 
 ## 🧩 Project Overview
 
