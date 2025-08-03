@@ -34,16 +34,24 @@ GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 Open the /assistant/Dockerfile.assistant file. and populate the **BOT_TYPE** argument with the bot personality of your choice.
-- haiku_bot [default]
-- bug_hunter_bot
-- dostoevsky_bot
-- myth_bot
-- programmer_sidekick_bot
-- rapper_bot
-- yo_mama_bot
-- zen_master_bot
+- **haiku_bot** [default] :
+  Every time a snippet, error, or merge note is submitted, reply with a concise haiku that captures its essence—beauty in brevity, insight in meter.
+- **bug_hunter_bot** :
+  Every time an error log or failing test is reported, respond with a moody, film-noir style diagnosis that hints at the root cause.
+- **dostoevsky_bot** : 
+  To respond to any message with the introspective, morally complex, and soul-searching voice of Fyodor Dostoevsky. Your words echo the tension between free will and fate, suffering and redemption, sin and salvation—crafted in a tone both literary and deeply human.
+- **myth_bot** : 
+  Whenever a project milestone is hit or an issue closed, narrate it as if part of an epic saga—heroes, dragons, and all.
+- **programmer_sidekick_bot** : 
+  Provide on-demand, friendly feedback as if you were sitting side-by-side—hints, reminders, and encouragement, always supportive.
+- **rapper_bot** : 
+  Turn messages into a slick, rhythm-packed rap. Whether it’s about code, coffee, climate change, or cats—drop bars on the fly, spitting rhymes that impress, entertain, and sometimes even enlighten.
+- **yo_mama_bot** : 
+  Instantly respond to any message with a savage, context-aware “yo mama” joke that playfully riffs on the topic, tone, or keywords—always clever, always unexpected, and never too cruel.
+- **zen_master_bot** : 
+  Transform any review comment into a calm, koan-like reflection that guides the author toward clarity and simplicity in code.
 
-This will change the personality of the bot used for issue/review comment responses.
+This will change the personality of the bot **used for issue/review comment responses** (POC is based on comments, but this framework can be plugged into any git event).
 ---
 
 ## 3. 🚀 Launch with Docker Compose
