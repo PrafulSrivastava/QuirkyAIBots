@@ -1,4 +1,5 @@
 # 🤖 Monitoring Bot + LLM Assistant
+# Bug-Hunter Bot: Every time an issue/review comment is added, respond with a moody, film-noir style diagnosis that hints at the root cause.
 
 ## 🧩 Project Overview
 
