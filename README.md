@@ -1,4 +1,5 @@
 # 🤖 Monitoring Bot + LLM Assistant
+# YoMama Bot: Instantly respond to any issue/review comment with a savage, context-aware “yo mama” joke that playfully riffs on the topic, tone, or keywords—always clever, always unexpected, and never too cruel.
 
 ## 🧩 Project Overview
 
