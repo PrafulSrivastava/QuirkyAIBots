@@ -57,6 +57,17 @@ docker-compose up --build
 ```
 ---
 
+## 3. 🚀 Launch with Docker Compose
+
+The root of the project contains a `docker-compose.yml` that references both services and automatically loads each `.env` file from the respective folders.
+
+To build and start the services:
+
+```bash
+docker-compose up --build
+```
+---
+
 ## 4. 🕹️ Configure the GitHub Monitoring Bot
 Once the services are up, the console will display a local URL like:
 
