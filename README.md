@@ -15,24 +15,13 @@ Both services rely on `.env` configuration files for secrets and environment var
 
 Before you begin, ensure you have:
 
-- [Docker](https://docs.docker.com/get-docker/) and Docker Compose installed.
+- [Docker](https://docs.docker.com/get-docker/) and Docker Compose **installed and running**.
 - A valid **Gemini API key** for the Assistant. [the API key is free for use]
-- Two empty .env files, one in assistant and other in monitoring_bot directories.
+- Create two empty .env files, one in assistant and other in monitoring_bot directories.
 
 ---
 
-## 2. 🚀 Launch with Docker Compose
-
-The root of the project contains a `docker-compose.yml` that references both services and automatically loads each `.env` file from the respective folders.
-
-To build and start the services:
-
-```bash
-docker-compose up --build
-```
----
-
-## 3. 🧠 Configure the Assistant (LLM Service)
+## 2. 🧠 Configure the Assistant (LLM Service)
 Create a .env file in the assistant/ directory using the following template:
 
 ```dotenv
@@ -42,6 +31,29 @@ MODEL=gemini/gemini-2.0-flash-001
 
 # API key for your LLM provider
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+Open the /assistant/Dockerfile.assistant file. and populate the **BOT_TYPE** argument with the bot personality of your choice.
+- haiku_bot [default]
+- bug_hunter_bot
+- dostoevsky_bot
+- myth_bot
+- programmer_sidekick_bot
+- rapper_bot
+- yo_mama_bot
+- zen_master_bot
+
+This will change the personality of the bot used for issue/review comment responses.
+---
+
+## 3. 🚀 Launch with Docker Compose
+
+The root of the project contains a `docker-compose.yml` that references both services and automatically loads each `.env` file from the respective folders.
+
+To build and start the services:
+
+```bash
+docker-compose up --build
 ```
 ---
 
@@ -67,7 +79,7 @@ docker-compose up
 ```
 ---
 
-## 5. 🔐 Required GitHub App Permissions
+## 5. 🔐 Required GitHub App Permissions (Verification step, in case the end to end flow does not work)
 Ensure the following permissions and event subscriptions are defined in your **app.yml** (used for GitHub App manifest creation):
 
 ```yaml
@@ -83,3 +95,4 @@ default_permissions:
   metadata: read
   pull_requests: write
 ```
+
