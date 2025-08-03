@@ -1,4 +1,5 @@
 # 🤖 Monitoring Bot + LLM Assistant
+# ZenMaster : Transform any review/issue comment into a calm, koan-like reflection that guides the author toward clarity and simplicity in code.
 
 ## 🧩 Project Overview
 
