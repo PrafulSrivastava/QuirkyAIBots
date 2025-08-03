@@ -6,7 +6,6 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from assistant.crew import Assistant
 from pydantic import BaseModel
-
 class CommitPayload(BaseModel):
     commit: str
 

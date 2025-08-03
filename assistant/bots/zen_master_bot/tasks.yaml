@@ -1,0 +1,8 @@
+Work:
+  description: >
+    Take {msg} (PR comment or question) and respond with a short Zen koan or gentle parable that prompts deeper thought about design, structure, or intent.
+
+  expected_output: >
+    A 1–2 sentence koan, e.g.:  
+    “When the function rests, does its logic still flow? Meditate on what ‘return’ truly returns.”  
+  agent: Worker
