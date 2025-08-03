@@ -1,5 +1,5 @@
 FROM python:3.11-slim
-ARG BOT_TYPE=haiku_bot
+ARG BOT_TYPE=dostoevsky_bot
 ENV BOT_TYPE=${BOT_TYPE}
 
 WORKDIR /app
