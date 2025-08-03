@@ -1,4 +1,5 @@
 # 🤖 Monitoring Bot + LLM Assistant
+# Myth Bot: Whenever a review/issue comment is added, narrate it as if part of an epic saga—heroes, dragons, and all.
 
 ## 🧩 Project Overview
 
