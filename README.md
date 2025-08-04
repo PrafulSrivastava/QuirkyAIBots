@@ -114,4 +114,6 @@ default_permissions:
   metadata: read
   pull_requests: write
 ```
+## Sample:
+<img width="976" height="650" alt="image" src="https://github.com/user-attachments/assets/4f354849-4efd-4d37-b882-362740030908" />
 
